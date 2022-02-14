@@ -61,7 +61,7 @@ def userInput():
         functionUser = input("\n Write a function: ")
         a = input(" Write the first number of the range: ")
         b = input(" Write the second number of the range: ")
-        errorUser = float(input(" Write the error range: "))
+        errorUser = float(input(" Write the error's value: "))
         rangeUser = [float(a), float(b)]
 
         if mathFunction(functionUser, float(a)) * mathFunction(functionUser, float(b)) < 0:
