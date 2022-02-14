@@ -1,4 +1,4 @@
-# bisectionMethod
+# Bisection Method
 
 This alghoritm is meant to automate the mathematical bisection method.
 
