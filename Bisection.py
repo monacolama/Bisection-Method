@@ -8,22 +8,6 @@ def mathFunction(function, value):
     result = float(eval(function))
     return result
 
-    # newList = list(function.strip(" "))
-
-    # for letter in range(len(newList)):
-    # if newList[letter] == '^' and newList[letter + 1] == '2':
-    # newList[letter] = "*x"
-    # newList[letter + 1] = ''
-    # elif newList[letter] == '^' and newList[letter + 1] == '3':
-    # newList[letter] = "*x*x"
-    # newList[letter + 1] = ''
-
-    # function = ''.join(newList)
-
-
-def customFunction(x):
-    return pow(x, 3) + (2 * x) + 5
-
 
 def bisection(function, range, error):
 
@@ -60,6 +44,7 @@ def bisection(function, range, error):
 
 
 def info():
+    
     print("\nHow to write different mathematical functions in the function's expression: \n")
     print(" LOGARITHM: log(number, base) -> example: x + log(x, 2)\n"
           " EXPONENTIATION: pow(base, exponent) -> example: x + pow(x, 3)\n"
@@ -69,7 +54,8 @@ def info():
           " TANGENT: tan(x) -> example: x + tan(x)\n")
 
 
-def menu():
+def userInput():
+    
     while True:
 
         functionUser = input("\n Write a function: ")
@@ -87,6 +73,7 @@ def menu():
 
 
 def main():
+    
     print("BISECTION METHOD")
     while True:
 
@@ -94,7 +81,7 @@ def main():
         userSelection = int(input("Select an option: "))
 
         if userSelection == 1:
-            menu()
+            userInput()
         if userSelection == 2:
             info()
         if userSelection == 3:
