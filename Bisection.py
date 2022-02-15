@@ -15,7 +15,7 @@ def bisection(function, range, error):
     resultOfFunction = 10000.
     t = Texttable()
     t.header(["Iteration", "a", "b", "m", "f(c)"])
-    t.set_cols_width([9, 9, 9, 9, 20])
+    t.set_cols_width([10, 10, 10, 10, 20])
     t.set_cols_dtype(["t", "t", "t", "t", "t"])
     t.set_cols_align(["c", "c", "c", "c", "c"])
     t.set_cols_valign(["m", "m", "m", "m", "m"])
